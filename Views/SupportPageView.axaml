@@ -1,0 +1,38 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
+             x:Class="wasteland_launcher.Views.SupportPageView"
+             Background="#141414"
+             FontFamily="{StaticResource Galmuri7}"
+             TextElement.Foreground="White">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock TextAlignment="Center" FontSize="30" Margin="0 0 0 15">도와주세요</TextBlock>
+        <TextBlock TextAlignment="Center" FontSize="15" >저희 서버가 계속 유지되려면, 충분한 자금이 필요해요.</TextBlock>
+        <TextBlock  TextAlignment="Center" FontSize="15" >저희를 후원해 치장 아이템도 얻고, 서버를 도울 수 있어요.</TextBlock>
+        <StackPanel Spacing="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 40 0 0">
+            <Button TextElement.Foreground="White" Background="#FC4835" >
+                <Button.Styles>
+                    <Style Selector="Button:pointerover /template/ ContentPresenter">
+                        <Setter Property="TextElement.Foreground" Value="White"/>
+                        <Setter Property="Background" Value="#913d34"/>
+                    </Style>
+                </Button.Styles>
+                <Label Margin="0 5 0 0">
+                    후원하기</Label>
+            </Button>
+            <Button TextElement.Foreground="White" Background="Transparent"  >
+                <Button.Styles>
+                    <Style Selector="Button:pointerover /template/ ContentPresenter">
+                        <Setter Property="TextElement.Foreground" Value="White"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Opacity" Value="50"/>
+                    </Style>
+                </Button.Styles>
+                <Label Margin="0 5 0 0">
+                    후원 혜텍 확인하기</Label>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,20 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="wasteland_launcher.App"
+             xmlns:local="using:wasteland_launcher"
+             RequestedThemeVariant="Light">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+             
+    <Application.Resources>
+        <FontFamily x:Key="Minecrafter">/Assets/Fonts/minecrafter.ttf#Minecrafter Alt</FontFamily>
+        <FontFamily x:Key="Galmuri7">/Assets/Fonts/Galmuri7.ttf#Galmuri7</FontFamily>
+    </Application.Resources>
+</Application>

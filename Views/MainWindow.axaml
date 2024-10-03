@@ -1,0 +1,70 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:wasteland_launcher.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MinWidth="1200" MinHeight="700"
+        Width="1200" Height="700"
+        x:Class="wasteland_launcher.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/wasteland-logo.ico"
+        Title="Wasteland Launcher">
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+    <SplitView IsPaneOpen="True"
+               OpenPaneLength="250"
+               PaneBackground="#1c1c1c"
+               DisplayMode="CompactInline"
+               TextElement.Foreground="White">
+        <SplitView.Pane>
+            <Grid RowDefinitions="Auto, *, Auto" Margin="0 20">
+                <Image Grid.Row="0" Source="/Assets/logo_alpha.png" Height="60" Width="60" Margin="00 20" />
+                <ListBox SelectedIndex="{Binding SelectedIndex}" Grid.Row="1" Background="#1c1c1c"
+                         TextElement.Foreground="White">
+                    <ListBox.Styles>
+                        <Style Selector="ListBoxItem /template/ ContentPresenter">
+                            <Setter Property="Margin" Value="3 0 0 0" />
+                        </Style>
+                        <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="TextElement.Foreground" Value="White" />
+                            <Setter Property="BorderBrush" Value="#FC4835" />
+                            <Setter Property="BorderThickness" Value="3 0 0 0" />
+                            <Setter Property="Margin" Value="0 0 0 0" />
+                        </Style>
+                        <Style Selector="ListBoxItem:pointerover /template/ ContentPresenter">
+                            <Setter Property="Background" Value="#262626" />
+                            <Setter Property="TextElement.Foreground" Value="White" />
+                            <Setter Property="BorderThickness" Value="3 0 0 0" />
+                            <Setter Property="Margin" Value="0 0 0 0" />
+                        </Style>
+                    </ListBox.Styles>
+                    <ListBoxItem VerticalAlignment="Center">
+                        <Label Margin="0 4 0 0">홈</Label>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Label Margin="0 4 0 0">런처 설정</Label>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Label Margin="0 4 0 0">오픈 소스</Label>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <Label Margin="0 4 0 0">서포트</Label>
+                    </ListBoxItem>
+                </ListBox>
+                <StackPanel Grid.Row="2" Opacity="40" Margin="0 0 0  30" HorizontalAlignment="Center">
+                    <Label FontSize="10">Copyright © 2024 Odinus Project.</Label>
+                </StackPanel>
+            </Grid>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Border>
+                <TransitioningContentControl Content="{Binding CurrentPage}" />
+            </Border>
+        </SplitView.Content>
+    </SplitView>
+</Window>
