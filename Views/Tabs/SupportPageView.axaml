@@ -8,11 +8,11 @@
              FontFamily="{StaticResource Galmuri7}"
              TextElement.Foreground="White">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock TextAlignment="Center" FontSize="30" Margin="0 0 0 15">도와주세요</TextBlock>
+        <TextBlock TextAlignment="Center" FontSize="30" Margin="0 0 0 15">SUPPORT US</TextBlock>
         <TextBlock TextAlignment="Center" FontSize="15" >저희 서버가 계속 유지되려면, 충분한 자금이 필요해요.</TextBlock>
         <TextBlock  TextAlignment="Center" FontSize="15" >저희를 후원해 치장 아이템도 얻고, 서버를 도울 수 있어요.</TextBlock>
         <StackPanel Spacing="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 40 0 0">
-            <Button TextElement.Foreground="White" Background="#FC4835" >
+            <Button TextElement.Foreground="White" Background="#FC4835" Click="HandleSupportButtonClicked">
                 <Button.Styles>
                     <Style Selector="Button:pointerover /template/ ContentPresenter">
                         <Setter Property="TextElement.Foreground" Value="White"/>

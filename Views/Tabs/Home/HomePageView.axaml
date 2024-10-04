@@ -5,5 +5,11 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="wasteland_launcher.Views.HomePageView"
              Background="#141414">
-    Welcome to Avalonia!
+    <Grid RowDefinitions="Auto, *">
+        <ListBox Grid.Row="0"  >
+            <ListBox.Items>Test</ListBox.Items>
+            <ListBox.Items>Test</ListBox.Items>
+            <ListBox.Items>Test</ListBox.Items>
+        </ListBox>
+    </Grid>
 </UserControl>

@@ -11,6 +11,7 @@
     <ItemGroup>
         <Folder Include="Models\" />
         <AvaloniaResource Include="Assets\**" />
+        <Folder Include="Views\Tabs\Home\HomeTabs\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -22,5 +23,28 @@
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.0" />
         <PackageReference Include="CmlLib.Core" Version="4.0.2" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\Tabs\OpenSourceView.axaml.cs">
+        <DependentUpon>OpenSourceView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Tabs\Home\HomePageView.axaml.cs">
+        <DependentUpon>HomePageView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Tabs\SupportPageView.axaml.cs">
+        <DependentUpon>SupportPageView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\MainWindow.axaml.cs">
+        <DependentUpon>MainWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Views\Components\ButtonView.axaml" />
     </ItemGroup>
 </Project>

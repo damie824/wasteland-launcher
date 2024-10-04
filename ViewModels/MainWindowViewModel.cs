@@ -17,6 +17,9 @@ public partial class MainWindowViewModel : ViewModelBase
             case 0:
                 CurrentPage = new HomePageViewModel();
                 break;
+            case 2:
+                CurrentPage = new OpenSourceViewModel();
+                break;
             case 3:
                 CurrentPage = new SupportPageViewModel();
                 break;

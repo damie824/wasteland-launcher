@@ -8,24 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86f9fd64-21da-4f71-a112-1fd057258448" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewLocator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/HomePageViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/SupportPageViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/ViewModelBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/HomePageView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/HomePageView.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/MainWindow.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/MainWindow.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/SupportPageView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/SupportPageView.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wasteland-launcher.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wasteland-launcher.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/OpenSourceViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Tabs/OpenSourceView.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Tabs/OpenSourceView.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.wasteland-launcher/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wasteland-launcher/.idea/avalonia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.wasteland-launcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wasteland-launcher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewModels/SupportPageViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/SupportPageViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/HomePageView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Tabs/Home/HomePageView.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/HomePageView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Tabs/Home/HomePageView.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/SupportPageView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Tabs/SupportPageView.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/SupportPageView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Tabs/SupportPageView.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wasteland-launcher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/wasteland-launcher.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +41,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/877e69d030b63e33b7a530a66f64e28fe56376b3ef0566d981df49d3d8b0d5/TextBlock.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2mv3QxTKsCuiec8dvv9b0ZLuFwE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,20 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET 프로젝트.wasteland-launcher.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.wasteland-launcher.executor&quot;: &quot;Run&quot;,
+    &quot;.NET 프로젝트.wasteland-launcher.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="wasteland-launcher" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -100,6 +96,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727943209858</updated>
       <workItem from="1727943211002" duration="15939000" />
+      <workItem from="1728000595990" duration="433000" />
+      <workItem from="1728001231716" duration="9255000" />
     </task>
     <servers />
   </component>
